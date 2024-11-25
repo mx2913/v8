@@ -184,6 +184,7 @@ jobs:
         run: |
           brew install lld
           pip install setuptools --break-system-packages
+          pip3 install setuptools --break-system-packages
 
       - name: Build ${{ matrix.arch }}
         run: |
