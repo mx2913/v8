@@ -183,6 +183,7 @@ jobs:
       - name: Install llvm
         run: |
           brew install lld
+          pip install setuptools --break-system-packages
 
       - name: Build ${{ matrix.arch }}
         run: |
