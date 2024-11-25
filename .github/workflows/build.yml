@@ -182,6 +182,7 @@ jobs:
 
       - name: Install llvm
         run: |
+          brew install lld
           brew install llvm
           export PATH="/usr/local/opt/llvm/bin:$PATH"
           LLVM_AR_PATH=$(which llvm-ar)
